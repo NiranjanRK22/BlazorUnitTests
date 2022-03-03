@@ -1,0 +1,52 @@
+[13:57:30.107 Verbose] - BuildManager - Some of the paths are absolute. This may prevent Live Unit Testing from building to the correct location.
+[13:57:30.107 Verbose] - BuildManager - Property BaseOutputPath evaluated to 'bin\' via:
+BaseOutputPath: 'bin\' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:31
+[13:57:30.107 Verbose] - BuildManager - Property BaseIntermediateOutputPath evaluated to 'E:\Blazor\BlazorUnitTestsPoc\BlazorUnitTestsPoc\obj\' via:
+BaseIntermediateOutputPath: '$(MSBuildProjectDirectory)\$(BaseIntermediateOutputPath)' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk.Publish\targets\Microsoft.NET.Sdk.Publish.targets:80
+  MSBuildProjectDirectory: 'E:\Blazor\BlazorUnitTestsPoc\BlazorUnitTestsPoc'
+  BaseIntermediateOutputPath: 'obj\' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Microsoft.Common.props:47
+[13:57:30.107 Verbose] - BuildManager - Property IntermediateOutputPath evaluated to 'obj\Debug\net5.0\' via:
+IntermediateOutputPath: '$(IntermediateOutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:244
+  IntermediateOutputPath: '$(BaseIntermediateOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:39
+    BaseIntermediateOutputPath: 'obj\' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Microsoft.Common.props:47
+    Configuration: 'Debug'
+[13:57:30.108 Verbose] - BuildManager - Property OutputPath evaluated to 'bin\Debug\net5.0\' via:
+OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:245
+  OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+    BaseOutputPath: 'bin\' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:31
+    Configuration: 'Debug'
+[13:57:30.108 Verbose] - BuildManager - Property OutDir evaluated to 'bin\Debug\net5.0\' via:
+OutDir: '$(OutputPath)' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:228
+  OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:245
+    OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+      BaseOutputPath: 'bin\' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:31
+      Configuration: 'Debug'
+[13:57:30.374 Verbose] - BuildManager - E:\Blazor\BlazorUnitTestsPoc\BlazorUnitTestsPoc\Program.cs(18,40): error CS0246: The type or namespace name 'App' could not be found (are you missing a using directive or an assembly reference?)
+[13:57:30.374 Verbose] - BuildManager - C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Roslyn\Microsoft.CSharp.Core.targets(71,5): error MSB4181: The "Csc" task returned false but did not log an error.
+[13:57:30.377 Verbose] - BuildManager - Some of the file paths defined in the csproj under the Live Unit Testing build path are missing. Verify whether these files should be present under the Live Unit Testing build path and if necessary update the csproj definition to look these files up in a different place.
+[13:57:30.377 Verbose] - BuildManager - Item _OutputPathItem 'E:\Blazor\BlazorUnitTestsPoc\.vs\BlazorUnitTestsPoc\v16\lut\0\b\BlazorUnitTestsPoc\bin\Debug\net5.0\' evaluated via:
+_OutputPathItem: '$(OutDir)' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:310
+  OutDir: 'E:\Blazor\BlazorUnitTestsPoc\.vs\BlazorUnitTestsPoc\v16\lut\0\b\BlazorUnitTestsPoc\bin\Debug\net5.0\' @ E:\Blazor\BlazorUnitTestsPoc\BlazorUnitTestsPoc\BlazorUnitTestsPoc.csproj:0
+[13:57:30.378 Verbose] - BuildManager - Item AppConfigFileDestination 'E:\Blazor\BlazorUnitTestsPoc\.vs\BlazorUnitTestsPoc\v16\lut\0\b\BlazorUnitTestsPoc\bin\Debug\net5.0\BlazorUnitTestsPoc.dll.config' evaluated via:
+AppConfigFileDestination: '$(OutDir)$(TargetFileName).config' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:338
+  OutDir: 'E:\Blazor\BlazorUnitTestsPoc\.vs\BlazorUnitTestsPoc\v16\lut\0\b\BlazorUnitTestsPoc\bin\Debug\net5.0\' @ E:\Blazor\BlazorUnitTestsPoc\BlazorUnitTestsPoc\BlazorUnitTestsPoc.csproj:0
+  TargetFileName: '$(TargetName)$(TargetExt)' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:248
+    TargetName: '$(AssemblyName)' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:240
+      AssemblyName: '$(MSBuildProjectName)' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props:32
+        MSBuildProjectName: 'BlazorUnitTestsPoc'
+    TargetExt: '.dll' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.BeforeCommon.targets:106
+[13:57:30.378 Verbose] - BuildManager - Item CreateDirectory 'E:\Blazor\BlazorUnitTestsPoc\.vs\BlazorUnitTestsPoc\v16\lut\0\b\BlazorUnitTestsPoc\bin\Debug\net5.0\ref' evaluated via:
+CreateDirectory: '$(OutDir)ref' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:398
+  OutDir: 'E:\Blazor\BlazorUnitTestsPoc\.vs\BlazorUnitTestsPoc\v16\lut\0\b\BlazorUnitTestsPoc\bin\Debug\net5.0\' @ E:\Blazor\BlazorUnitTestsPoc\BlazorUnitTestsPoc\BlazorUnitTestsPoc.csproj:0
+[13:57:30.378 Verbose] - BuildManager - Item _DebugSymbolsOutputPath 'E:\Blazor\BlazorUnitTestsPoc\.vs\BlazorUnitTestsPoc\v16\lut\0\b\BlazorUnitTestsPoc\bin\Debug\net5.0\BlazorUnitTestsPoc.pdb' evaluated via:
+_DebugSymbolsOutputPath: '@(_DebugSymbolsIntermediatePath->'$(OutDir)%(Filename)%(Extension)')' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:404
+  OutDir: 'E:\Blazor\BlazorUnitTestsPoc\.vs\BlazorUnitTestsPoc\v16\lut\0\b\BlazorUnitTestsPoc\bin\Debug\net5.0\' @ E:\Blazor\BlazorUnitTestsPoc\BlazorUnitTestsPoc\BlazorUnitTestsPoc.csproj:0
+[13:57:30.378 Verbose] - BuildManager - Item _ApplicationManifestFinal 'E:\Blazor\BlazorUnitTestsPoc\.vs\BlazorUnitTestsPoc\v16\lut\0\b\BlazorUnitTestsPoc\bin\Debug\net5.0\BlazorUnitTestsPoc.dll.manifest' evaluated via:
+_ApplicationManifestFinal: '$(OutDir)$(_DeploymentTargetApplicationManifestFileName)' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:442
+  OutDir: 'E:\Blazor\BlazorUnitTestsPoc\.vs\BlazorUnitTestsPoc\v16\lut\0\b\BlazorUnitTestsPoc\bin\Debug\net5.0\' @ E:\Blazor\BlazorUnitTestsPoc\BlazorUnitTestsPoc\BlazorUnitTestsPoc.csproj:0
+  _DeploymentTargetApplicationManifestFileName: '$(TargetFileName).manifest' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:268
+    TargetFileName: '$(TargetName)$(TargetExt)' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:248
+      TargetName: '$(AssemblyName)' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:240
+        AssemblyName: '$(MSBuildProjectName)' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props:32
+          MSBuildProjectName: 'BlazorUnitTestsPoc'
+      TargetExt: '.dll' @ C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.BeforeCommon.targets:106

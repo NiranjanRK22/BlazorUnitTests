@@ -1,0 +1,8 @@
+﻿@page "/event"
+<h3>EventHandling</h3>
+<input type="number" @bind-value="@Room.Price" @bind-value:event="oninput" />
+<p>Price: @Room.Price</p>
+
+@code {
+    BlazorRoom Room = new BlazorRoom();
+}

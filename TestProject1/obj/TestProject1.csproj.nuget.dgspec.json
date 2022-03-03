@@ -1,0 +1,176 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Blazor\\BlazorUnitTestsPoc\\TestProject1\\TestProject1.csproj": {}
+  },
+  "projects": {
+    "E:\\Blazor\\BlazorUnitTestsPoc\\BlazorUnitTestsPoc\\BlazorUnitTestsPoc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Blazor\\BlazorUnitTestsPoc\\BlazorUnitTestsPoc\\BlazorUnitTestsPoc.csproj",
+        "projectName": "BlazorUnitTestsPoc",
+        "projectPath": "E:\\Blazor\\BlazorUnitTestsPoc\\BlazorUnitTestsPoc\\BlazorUnitTestsPoc.csproj",
+        "packagesPath": "C:\\Users\\niranjanr\\.nuget\\packages\\",
+        "outputPath": "E:\\Blazor\\BlazorUnitTestsPoc\\BlazorUnitTestsPoc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\niranjanr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
+              "version": "[5.0.14, 5.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\Blazor\\BlazorUnitTestsPoc\\TestProject1\\TestProject1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Blazor\\BlazorUnitTestsPoc\\TestProject1\\TestProject1.csproj",
+        "projectName": "TestProject1",
+        "projectPath": "E:\\Blazor\\BlazorUnitTestsPoc\\TestProject1\\TestProject1.csproj",
+        "packagesPath": "C:\\Users\\niranjanr\\.nuget\\packages\\",
+        "outputPath": "E:\\Blazor\\BlazorUnitTestsPoc\\TestProject1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\niranjanr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\Blazor\\BlazorUnitTestsPoc\\BlazorUnitTestsPoc\\BlazorUnitTestsPoc.csproj": {
+                "projectPath": "E:\\Blazor\\BlazorUnitTestsPoc\\BlazorUnitTestsPoc\\BlazorUnitTestsPoc.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.17.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "bunit.web": {
+              "target": "Package",
+              "version": "[1.6.4, )"
+            },
+            "bunit.xunit": {
+              "target": "Package",
+              "version": "[1.0.0-preview-02, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+﻿@page "/page-params/{Type}/{Id:int}"
+@page "/page-params/{Type}"
+
+<h3>Page With Parameter</h3>
+<h5>Parameter Values:</h5>
+<p>Type: @Type</p>
+<p>Id: @Id</p>
+
+@code {
+    [Parameter]
+    public string Type { get; set; }
+
+    [Parameter]
+    public int? Id { get; set; }
+}
